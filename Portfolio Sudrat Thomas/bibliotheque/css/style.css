@@ -1,0 +1,199 @@
+:root {
+  --black: #333333;
+  --white: #f1f2eb;
+  --White2: #eaeaea;
+  --vertclaire: #b6c197;
+  --corail: #f48668;
+  --beige: #f3c0a2;
+  --teal: #7dcfb6;
+  --violet: #b79fad;
+  --violet2: #cbc5ea;
+  --grisTaupe1: #798086;
+  --grisTaupe2: #918e8c;
+  --grisTrolley: #556f7a;
+  --grisPayne: #c9beb7;
+  --grisGranite: #605f5d;
+  --grispale: #d3bcc0;
+  --olive: #3f3834;
+  --myrtille: #2e6171;
+  --pearl: #eae1ce;
+  --violetFire: #2d112a;
+  --blueFez: #a6fcff;
+  --pinkm: #f2d7ee;
+}
+html {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+  font-family: Arial;
+}
+.bubble-text {
+  position: relative;
+	background: #76949f;
+  border-radius: .4em;
+  padding: 1rem;
+}
+
+
+.bubble-text::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #76949f;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+
+
+/*---------------------------*/
+/*----------HEADER-----------*/
+/*---------------------------*/
+
+body .navbar {
+  background-color: #1d201f !important;;
+  
+}
+body .navbar-brand {
+  border: 2px solid var(--pearl);
+}
+body a {
+  color: var(--pearl);
+}
+header .jumbotron {
+  background: url(../../image/bg1.JPG);
+  background-size: cover;
+  background-position: center center;
+  height: 1000px;
+  border-radius: 0;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/*---------------------------*/
+/*----------MAIN-------------*/
+/*---------------------------*/
+/*---------------------------*/
+/*----------ABOUT------------*/
+/*---------------------------*/
+#about {
+  padding: 5rem 0;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(var(--beige), #ffdcc8);
+}
+#about h4 {
+  font-weight: bold;
+}
+#about .jumbotron {
+  background-color: var(--pearl);
+}
+#about .border {
+  border: 1px solid var(--beige) !important;
+}
+
+/*---------------------------*/
+/*----------SKILLS-----------*/
+/*---------------------------*/
+
+#skills {
+  background: url(../../image/firewatch.jpg);
+  height: 2000px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 300px 0px;
+}
+
+#skills .jumbotron {
+  background-color: rgba(211, 188, 192, 0.8);
+}
+#skills .container {
+  margin-bottom: 250px;
+}
+
+#skills .row > div {
+  margin-bottom: 1rem;
+}
+
+/*---------------------------*/
+/*----------PROJET-----------*/
+/*---------------------------*/
+#interet {
+  color: #fce8e8;
+  background: linear-gradient(var(--violetFire), var(--pinkm));
+  margin-bottom: 0 !important;
+}
+#interet .col {
+  margin: 2rem;
+}
+#interet i {
+  border-radius: 0.9rem;
+  padding: 1rem;
+  max-width: 10rem;
+  font-size: 70px;
+}
+.cadre {
+  text-align: center;
+  background-color: var(--black);
+  border: 2px solid var(--pearl);
+  border-radius: 0.9rem;
+  padding: 1rem;
+  transition: height 2s;
+}
+.photo {
+  background-color: var(--violet2);
+  border: 2px solid var(--White2);
+  background-size: cover;
+}
+
+/*---------------------------*/
+/*----------CONTACT----------*/
+/*---------------------------*/
+
+#contact {
+  background-color: #9590a8;
+  color: var(--pearl);
+}
+.required {
+  color: red
+}
+textarea {
+  resize: initial;
+}
+
+/*---------------------------*/
+/*----------FOOTER-----------*/
+/*---------------------------*/
+footer {
+  background-color: var(--black);
+  padding: 1rem;
+}
+footer i {
+  font-size: 5rem;
+}
+footer a {
+  margin: 2rem;
+}
+footer a,
+footer p,
+footer h1,
+footer h6,
+footer h5,
+footer h4 {
+  color: var(--pearl);
+  font-family: DINPro;
+}
